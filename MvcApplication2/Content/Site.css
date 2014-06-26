@@ -425,6 +425,7 @@ a, a:visited, a:active {
 	height: 400px; 
 	position: relative; 
 	border: 1px solid #ccc; 
+	background: url(http://static.panoramio.com/photos/large/30314472.jpg) 0 0 no-repeat;
 }
 .parent1 	{ 
 	/* overall animation container */
@@ -438,7 +439,7 @@ a, a:visited, a:active {
 }
 .parent2	{ 
 	/* full content during animation *can* go here */ 
-	background-color: lightblue;
+	/*background-color: lightblue;*/
 }
 .parent3	{ 
 	/* animated, "folded" block */
@@ -447,7 +448,7 @@ a, a:visited, a:active {
 	-webkit-transition-duration: 0.5s;
 	-webkit-transform: rotateX(-90deg);
 	-webkit-transform-origin: top; 
-	background-color: pink;
+	/*background-color: pink;*/
 }
 
 /* Hover states to trigger animations */

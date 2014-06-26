@@ -44,8 +44,8 @@
   <div id="container">
 	<div class="parent1">
 		<div class="parent2">
-			<div class="parent3">
-				Content
+			<div class="parent3" style="color: #fff;background: rgba(0, 0, 0, .5)">
+				<span style="color: #fff; font-size: 24px; display: block; padding: 20px 0 0 20px; 1px 1px 0 rgba(0, 0, 0, 0.25)">PRUEBA CSS</span>
 			</div>
 		</div>
 	</div>
