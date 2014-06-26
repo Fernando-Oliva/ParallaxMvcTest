@@ -362,7 +362,7 @@ body, html {
   box-shadow: inset 0 0 1em #111;
 }
 .parallax .bg__foo, .parallax .bg__bazz {
-  height: 400px;
+  height: 600px;
 }
 .parallax .bg__foo {
   /*background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg);*/
@@ -417,4 +417,44 @@ article section.parallax {
 
 a, a:visited, a:active {
   color: #f66;
+}
+
+/* Static state */
+#container 	{ 
+	width: 400px; 
+	height: 400px; 
+	position: relative; 
+	border: 1px solid #ccc; 
+}
+.parent1 	{ 
+	/* overall animation container */
+	height: 0; 
+	overflow: hidden;
+
+	-webkit-transition-property: height;
+	-webkit-transition-duration: 0.5s;
+	-webkit-perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+}
+.parent2	{ 
+	/* full content during animation *can* go here */ 
+	background-color: lightblue;
+}
+.parent3	{ 
+	/* animated, "folded" block */
+	height: 56px; 
+	-webkit-transition-property: all; 
+	-webkit-transition-duration: 0.5s;
+	-webkit-transform: rotateX(-90deg);
+	-webkit-transform-origin: top; 
+	background-color: pink;
+}
+
+/* Hover states to trigger animations */
+#container:hover .parent1	{ 
+	height: 111px; 
+}
+#container:hover .parent3	{
+	-webkit-transform: rotateX(0deg); 
+	height: 111px; 
 }
