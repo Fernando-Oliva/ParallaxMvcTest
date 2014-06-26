@@ -421,11 +421,14 @@ a, a:visited, a:active {
 
 /* Static state */
 #container 	{ 
-	width: 400px; 
+	width: 0 auto;
 	height: 400px; 
 	position: relative; 
 	border: 1px solid #ccc; 
-	background: url(http://static.panoramio.com/photos/large/30314472.jpg) 0 0 no-repeat;
+	background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+	background-image: url(http://static.panoramio.com/photos/large/30314472.jpg);
 }
 .parent1 	{ 
 	/* overall animation container */
